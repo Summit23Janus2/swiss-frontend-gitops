@@ -1,0 +1,15 @@
+app:
+  name: swiss-poi-map-app
+  namespace: swiss
+  cluster: .apps.summit23blues.6mbu.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/Summit23Janus2/swiss-frontend
+  org: Summit23Janus2
+  name: swiss-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: swiss/poi-map-app
+  tag: latest
